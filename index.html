@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Kinnear Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <body>
+  <!-- Navigation bar -->
+  <nav>
+    <div class="links">
+      <div class="sitelink">
+        <a class="animated" data-page="home" href="#top"><img src="./images/MK2.png" aria-label="square box logo with initial M K inside" alt="box logo with M K initials" height="50px"></a>
+        <a class="animated" data-page="origins" href="#origins">Origins</a>
+        <a class="animated" data-page="creations" href="#creations">Creations</a>
+        <a class="animated" data-page="feed" href="#feedback">Feedback</a>
+      </div>
+      <div class="hamburger">
+        <a id="hamburger-button"><img src="./images/hamburgerbutton.png" aria-label="three horizontal line drop down menu button" alt="hamburger menu button" height="50px"></a>
+      </div>
+      <div class="contactlink">
+        <a class="animated" href="https://www.linkedin.com/in/michael-kinnear-839010b1/" target="_blank"><img src="./images/linkedin.png" aria-label="linkedin logo button" alt="linkedin logo" height="30px"></a>
+        <a class="animated" href="https://github.com/MLKinnear" target="_blank"><img src="./images/github.png" aria-label="github logo button" alt="github logo" height="30px"></a>
+        <a class="animated" data-page="contact" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation bar -->
+  <!-- Welcome page -->
+  <section class="welcome">
+    <div id="home" class="animate__animated animate__bounceInLeft greeting page active">
+      <h3>Welcome! I'm Mike</h3>
+      <p>I am a software developer based out of the Sunshine Coast, British Columbia. This is a site that has a bit about me and my work. Click a link you like!</p>
+    </div>
+    <img src="./images/profilepic.png" id="profilepic" aria-label="picture of the webpage designer michael kinnear" alt="profile picture">
+  </section>
+  <!-- Welcome page -->
+  <!-- Origins page -->
+  <div class="contrastltblue">
+    <h2 id="origins">Origins</h2>
+      <section>
+        <div id="originbox">
+          <div class="card" style="width: 24rem;">
+            <img src="./images/software.png" alt="coding img">
+            <div class="card-body">
+              <h3>Software Development</h3>
+              <p>About my journey and progress in the software development space.</p>
+              <a href="#origins" class="button open" data-target="originsoftware">Learn more</a>
+            </div>
+          </div>
+          <div class="card" style="width: 24rem;">
+            <img src="./images/automotive.png"alt="tool img">
+            <div class="card-body">
+              <h3>Mechanics</h3>
+              <p>History of my career as a seasoned Mechanic in multiple fields.</p>
+              <a href="#origins" class="button open" data-target="originmechanics">Learn more</a>
+            </div>
+          </div>
+          <div class="card" style="width: 24rem;">
+            <img src="./images/personal.png"alt="hicking img">
+            <div class="card-body">
+              <h3>Personal</h3>
+              <p>A little about me outside of the "office".</p>
+              <a href="#origins" class="button open" data-target="originpersonal">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="new-elements" style="display: none;">
+        <div id="originsoftware" class="new">
+          <div class="card">
+            <div class="card-body">
+              <h3>Software Development</h3>
+              <p>We all interact with software in one way or another. In my automotive career,
+                I became very curious about how front-end inputs are tied to back-end databases and how they interact with one another.
+                So, I started digging.
+              </p>
+              <p>Through research online and speaking with jiu-jitsu training partners that work in the tech industry I thought 'I have to learn more'.
+                I have been looking for something that excites me and is easier on my body than mechanics.
+                No surprise now, but this is it!
+              </p>
+              <p>I started with "Zero to Mastery" online learning for a few months and worked through their complete web developer course. I got hooked.
+                Starting in October 2024, I have been taking a "Software Development Bootcamp" with Circuit Stream and UBC.
+                It is going great and I am learning some awesome tools and discovering how complex this industry is.
+                I can't wait to work in this industry full-time and be a part of a team to build some amazing projects.
+              </p>
+              <br>
+              <a href="#origins" class="button close">Close</a>
+            </div>
+          </div>
+        </div>
+        <div id="originmechanics" class="new">
+          <div class="card">
+            <div class="card-body">
+              <h3>Mechanics</h3>
+              <p>As a child, nothing was safe — I dismantled it all.</p>
+              <p>I started getting paid for dismantling things when I was 15, working at a marine shop.
+                I got better at assembling things later when I worked at an automotive shop at 17.
+                I spent years as a marine technician and now I am a GM Master Technician authorized to work on EVs.
+              </p>
+              <p>Two wheels, four wheels, or no wheels. 13L diesels, 2.5HP outboard motors, and 400V electric vehicles — I can confidently say I have worked on it all.
+                Over the years, I have learned that my analytical mindset, experience, and deep understanding of fundamental concepts are what have made me successful
+                as a technician.</p>
+                <br>
+              <a href="#origins" class="button close">Close</a>
+            </div>
+          </div>
+        </div>
+        <div id="originpersonal" class="new">
+          <div class="card">
+            <div class="card-body">
+              <h3>Personal</h3>
+              <p>As a typical West Coaster, I enjoy getting outside and walking my two dogs with a coffee in hand.
+                You might also find me training in Brazilian Jiu-Jitsu, which I love doing at least a few times a week.
+                  Otherwise, I will be puttering around the house or spending time with my wife.
+              </p>
+              <br>
+              <a href="#origins" class="button close">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Origins page -->
+  <!-- Creations page -->
+  <h2 id="creations">Creations</h2>
+  <section class="creations">
+    <div class="backarrow">
+      <img id="backarrow" src="./images/backarrow.png" width="100%" height="auto" alt="back arrow">
+    </div>
+    <a  href="https://github.com/MLKinnear/Portfolio" target="_blank" class="projects">
+      <img id="portfolio" src="./images/portfolio.png" width="100%" alt="image of this website as a project">
+    </a>
+    <a href="https://github.com/MLKinnear/Under-Construction" target="_blank" class="projects">
+      <img id="underconstruction" src="./images/underconstruction.png" style="width: 100%"  alt="image of under construction app as a project">
+    </a>
+    <div class="forwardarrow">
+      <img id="forwardarrow" src="./images/forwardarrow.png" width="100%" height="auto" alt="forward arrow">
+    </div>
+  </section>
+  <!-- Creations page -->
+  <!-- Feedback -->
+  <content class="feedback">
+    <h2 id="feedback">Feedback</h2>
+    <p style="padding-left:30px;">Check out what others think and weigh in on the site or a project...</p>
+    <div>
+      <form id="formfield">
+        <label for="fname">Display name:</label>
+        <br>
+        <input type="text" id="fname" name="fname" required="">
+        <input type="button" value="Add a project" id="add-project-btn">
+        <br>
+        <div id="additional-project" style="display: none;">
+          <label for="addproject">Project name:</label>
+          <br>
+          <input type="text" id="addproject" name="projectname" >
+        </div>
+        <br>
+        <label for="message">Feedback:</label>
+        <br>
+        <textarea id="message" name="message" rows="6" style="width: 100%;" placeholder="Type feedback here..." required=""></textarea>
+        <br>
+        <div id="star-container" class="stars">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Post">
+      </form>
+    </div>
+    <h3 id="posts">Posts</h3>
+      <div>
+        <!-- Feedback Content -->
+      </div>
+  </content>
+  <!-- Feedback -->
+  <!-- Contact page -->
+  <div class="contrastgrey">
+    <h2 id="contact">Contact</h2>
+    <section>
+      <div class="contact">
+        <p>If you would like to touch base with me please feel free to send me a message!</p>
+        <br>
+        <form id="contactfield" autocomplete="on">
+          <label for="email" style="color:white">Email:</label>
+          <br>
+          <input type="text" id="email" name="email" placeholder="Address" style="max-width: 250px;" autocomplete="email" required="">
+          <br>
+          <label for="message" style="color:white">Message:</label>
+          <br>
+          <textarea type="text" id="messageInput" name="message" rows="6" style="width: 100%;" placeholder="Type your message here..." required=""></textarea>
+          <br>
+          <button id="submit" type="button">Submit</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <!-- Contact page -->
+  <!-- Footer -->
+  <footer>
+    <div>
+        <p>Created 2024 by Michael Kinnear</p>
+    </div>
+  </footer>
+  <!-- Footer -->
+    <script src="script.js"></script>
+</body>
+</html>

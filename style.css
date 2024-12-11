@@ -1,0 +1,314 @@
+/* Global */
+* {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+h2{
+
+  font-size:3em;
+}
+
+h3{
+  margin-bottom: 0.5em;
+  font-size:3em;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+p{
+  font-size:2em;
+}
+
+section{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+/* Global */
+/* Navigation bar */
+nav {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  width: 99%;
+  z-index: 15;
+  background-color: #ffffff;
+  margin: 3px;
+  min-width: 940px;
+  padding: 5px;
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 3px 3px 3px grey;
+  font-size: 2em;
+}
+
+.links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sitelink{
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 350px;
+  justify-content: space-around;
+}
+
+.contactlink{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.animated:hover{
+  animation: pulse;
+  animation-duration: 1s;
+}
+
+.animated{
+  padding: 5px 10px 5px 10px;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+@media(max-width: 965px){
+  nav{
+    min-width: 0px;
+  }
+  .sitelink{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    border-top: 2px solid black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .hamburger{
+    display: flex;
+  }
+
+  .sitelink.show{
+    display: flex;
+  }
+
+  .sitelink a{
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    width: 100%;
+  }
+}
+/* Navigation bar */
+/* Welcome page */
+.welcome{
+  display: flex;
+  height: 700x;
+  margin: 95px 10px 10px 10px;
+  padding-left: 1em;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.greeting{
+  padding: 90px 5px 150px 5px ;
+  min-width: 425px;
+  max-width: 600px;
+}
+
+#profilepic{
+  width: 100%;
+  height: auto;
+  max-width: 722px;
+  max-height: 480px;
+}
+/* Welcome page */
+/* Origins */
+.contrastltblue{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(220, 77%, 92%);
+}
+
+#origins{
+  padding: 110px 20px 0px 20px;
+  margin-top: 80px; 
+}
+
+#originbox{
+  display: flex;
+  padding-bottom: 50px;
+  width: 100%;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+@media(max-width: 768px){
+  #originbox{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.card{
+  font-size: 10px;
+  background-color: rgb(235, 235, 235);
+}
+
+.new{
+  display: none;
+}
+
+.button{
+  padding: 0.5rem;
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 3px 3px 3px grey;
+  font-size: 1.75em;
+}
+
+#originsoftware{
+  padding: 0px 0px 45px 0px;
+  margin: 1rem;
+}
+
+#originmechanics{
+  padding: 0px 0px 45px 0px;
+  margin: 1rem;
+}
+
+#originpersonal{
+  padding: 0px 0px 45px 0px;
+  margin: 1rem;
+}
+
+#close{
+  padding: 0.5rem;
+  }
+/* Origins*/
+/* Creations */
+#creations{
+  padding: 100px 20px 0px 20px;
+  margin-top: 60px; 
+}
+
+.creations{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  min-height: 400px;
+}
+
+#portfolio{
+  display: block;
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 3px 3px 3px grey;
+}
+
+#underconstruction{
+  display: none;
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 3px 3px 3px grey;
+}
+/* Creations */
+/* Feedback */
+.stars{
+  display: flex;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.star{
+  color: gray;
+}
+
+.star.selected{
+  color: gold;
+}
+
+#feedback{
+  padding: 100px 20px 0px 20px;
+  margin-top: 60px; 
+}
+
+#formfield{
+  font-size:1em;
+  text-decoration: none;
+  padding: 50px;
+  background-color: hsl(220, 77%, 92%);
+  border-radius: 1em;
+  margin:0px 50px 50px 50px;
+}
+
+.feedback-item{
+  margin:20px;
+  padding: 5px;
+  border: solid 2px;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 3px 3px 3px grey;
+}
+
+#posts{
+  padding: 20px;
+  margin-top: 20px; 
+}
+/* Feedback */
+/* Contact */
+.contrastgrey{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 80%);
+}
+
+#contact{
+  padding: 100px 20px 0px 20px;
+  margin-top: 60px;
+}
+
+.contact{
+  min-height: 400px;
+  margin: 30px;
+}
+
+#contactfield{
+  font-size:1em;
+  text-decoration: none;
+  padding: 50px;
+  background-color: #4d4d50;
+  border-radius: 1em;
+}
+/* Contact */
+/* Footer */
+footer{
+  width: 100%;
+  font-size: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 80%);
+  margin: 0;
+  padding: 1rem 0 0 0;
+}
+/* Footer */
