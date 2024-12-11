@@ -181,6 +181,8 @@ nav {
   border-color: black;
   box-shadow: 3px 3px 3px grey;
   font-size: 1.75em;
+  display: flex;
+  justify-content: center;
 }
 
 #originsoftware{
@@ -197,10 +199,6 @@ nav {
   padding: 0px 0px 45px 0px;
   margin: 1rem;
 }
-
-#close{
-  padding: 0.5rem;
-  }
 /* Origins*/
 /* Creations */
 #creations{
